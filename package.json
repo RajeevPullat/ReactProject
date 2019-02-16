@@ -4,10 +4,10 @@
   "description": "kanban-app",
   "scripts": {
     "clean": "rimraf dist",
-    "start": "webpack-serve ./webpack.config.js",
+    "start": "webpack-dev-server --env.dev --color",
     "format": "prettier --write \"src/{scripts,styles}/**/*\"",
     "prebuild": "npm run format",
-    "build": "npm run clean && webpack --config ./webpack.config.js",
+    "build": "npm run clean && webpack --config ./webpack.config.js --env.prod",
     "test": "jest",
     "test-watch": "jest --watchAll"
   },
@@ -39,7 +39,7 @@
     "typescript": "^3.0.1",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
-    "webpack-serve": "^2.0.2"
+    "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
     "react": "^16.5.2",
