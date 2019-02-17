@@ -5,10 +5,16 @@ body {
   align-items: center;
 }
 
+.appContainer{
+  text-align: center;
+}
+
 h1 {
   font-size: 3rem;
-  background-color: green;
-  border: 10px solid cornflowerblue;
+  background-color: #DC0229;
+  border: 10px solid #050505;
+  color:#F3CE8D;
+  text-shadow: 0 0 5px #666;
   padding: 3rem;
   text-align: center;
 }
